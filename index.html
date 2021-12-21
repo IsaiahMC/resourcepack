@@ -1,0 +1,102 @@
+<html>
+    <head>
+        <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+        <script src="https://unpkg.com/split.js/dist/split.min.js"></script>
+        <title>Isaiah's Resourcepacks</title>
+        <style>
+        * { font-family: "Segoe UI",Arial,sans-serif !important; }
+        .dalbtns a { background:black; color:white; text-decoration:none; padding: .5rem 1rem .5rem 1rem; }
+        .w3-button {background:black;color:white;border-radius:.4rem;}
+        .dlbtns .w3-button::before { content: 'MC 1.' }
+        .mySlides {display:none;}
+        
+        .split {
+    display: flex;
+    flex-direction: row;
+}
+
+.gutter {
+    background-color: #eee;
+    background-repeat: no-repeat;
+    background-position: 50%;
+}
+
+.gutter.gutter-horizontal {
+    background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAUAAAAeCAYAAADkftS9AAAAIklEQVQoU2M4c+bMfxAGAgYYmwGrIIiDjrELjpo5aiZeMwF+yNnOs5KSvgAAAABJRU5ErkJggg==');
+    cursor: col-resize;
+}
+        </style>
+    </head>
+    <body>
+        <div class="w3-content" id="main" style="padding-top:5vh">
+            <h1>Isaiah's iFaithful Resourcepacks</h1><hr>
+            <div class="w3-container w3-half">
+                <h2>Downloads</h2>
+                <div class="w3-container dlbtns">
+                    <h3>128x128</h3>
+                    <a class="w3-button" href="./x128/out/iFaithfulx128_1.12.zip">12.2</a>
+                    <a class="w3-button" href="./x128/out/iFaithfulx128_1.16.5.zip">16.5</a>
+                    <a class="w3-button" href="./x128/out/iFaithfulx128_1.17.zip">17.1</a>
+                    <a class="w3-button" href="./x128/out/iFaithfulx128_1.18.zip">18.1</a>
+                </div>
+                <div class="w3-container dlbtns">
+                    <h3>512x512</h3>
+                    <a class="w3-button" href="./x512/out/FaithfulHDx512_1.12.zip">12.2</a>
+                    <a class="w3-button" href="./x512/out/FaithfulHDx512_1.16.5.zip">16.5</a>
+                    <a class="w3-button" href="./x512/out/FaithfulHDx512_1.17.zip">17.1</a>
+                    <a class="w3-button" href="./x512/out/FaithfulHDx512_1.18.zip">18.1</a>
+                </div>
+            </div>
+            <div class="w3-container w3-half">
+                <div class="w3-display-container" style="float:right;margin-right:10vw;background:blue;max-width:256px;">
+                    <div class="w3-display-container mySlides">
+                      <img src="./x512/HD-x512/assets/minecraft/textures/blocks/stone.png" style="width:256px">
+                      <div class="w3-display-bottommiddle w3-large w3-container w3-padding-16 w3-black">
+                        x512
+                      </div>
+                    </div>
+
+                    <div class="w3-display-container mySlides">
+                      <img src="./x128/HD-x128/assets/minecraft/textures/blocks/stone.png" style="width:256px">
+                      <div class="w3-display-bottommiddle w3-large w3-container w3-padding-16 w3-black">
+                        x128
+                      </div>
+                    </div>
+
+                    <div class="w3-display-container mySlides">
+                      <img src="./x8/stone.png" style="width:256px">
+                      <div class="w3-display-bottommiddle w3-large w3-container w3-padding-16 w3-black">
+                        x8
+                      </div>
+                    </div>
+
+                    <button class="w3-button w3-display-left w3-black" onclick="plusDivs(-1)">&#10094;</button>
+                    <button class="w3-button w3-display-right w3-black" onclick="plusDivs(1)">&#10095;</button>
+
+                </div>
+            </div>
+            <div class="w3-footer" style="position:absolute;bottom:3vh;width:100vw;left:3vw">
+                <span>Note: This is not associated with Vattic's Faithful x32</span>
+            </div>
+        </div>
+    </body>
+    <script>
+var slideIndex = 1;
+showDivs(slideIndex);
+
+function plusDivs(n) {
+  showDivs(slideIndex += n);
+}
+
+function showDivs(n) {
+  var i;
+  var x = document.getElementsByClassName("mySlides");
+  if (n > x.length) {slideIndex = 1}
+  if (n < 1) {slideIndex = x.length}
+  for (i = 0; i < x.length; i++) {
+     x[i].style.display = "none";  
+  }
+  x[slideIndex-1].style.display = "block";  
+}
+</script>
+</html>
